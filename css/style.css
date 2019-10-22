@@ -1,21 +1,9 @@
-@font-face {
-    font-family: Silka-Regular;
-    src: url("../fonts/Silka/silka-regular-webfont.ttf");
-}
-
-@font-face {
-    font-family: Silka-Medium;
-    src: url("../fonts/Silka/silka-medium-webfont.ttf");
-}
-
-@font-face {
-    font-family: Silka-SemiBold;
-    src: url("../fonts/Silka/silka-semibold-webfont.ttf");
-}
-
-@font-face {
-    font-family: Silka-Bold;
-    src: url("../fonts/Silka/silka-bold-webfont.ttf");
+/* ///////////////////////////////// Overall layout ////////////////////////////// */
+:root {
+    --gold: #A58861;
+    --gray: rgba(25, 26, 30, 0.4);
+    --black-btn: #191A1E;
+    --black-border-btn: rgba(25, 26, 30, 0.15);
 }
 
 * {
@@ -29,6 +17,15 @@ body {
     font-family: 'Silka-SemiBold', sans-serif;
 }
 
+.wrapper {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
 
 /* PROJECT PAGE */
 
@@ -54,29 +51,29 @@ body {
     width: 60%;
 }
 
-/* ABOUT ME PAGE */
-#about-title {
+/*/////////////////////////////// CONTACT ME PAGE (start) //////////////////////////////*/
+#contact-title {
     font-size: 11px;
     line-height: 30px;
     margin-bottom: 5px;
 }
 
-#about-subtitle {
+#contact-subtitle {
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 25px;
 }
 
-#about-subtitle span {
+#contact-subtitle span {
     color: #A58861;
     display: inline-block;
 }
 
-.about-btn {
+.contact-btn {
     margin-bottom: 90px;
     background: #fff;
-    border: 1px solid rgba(25, 26, 30, 0.15);
-    color: #191A1E;
+    border: 1px solid var(--black-border-btn);
+    color: var(--black-btn);
     transition: all .15s ease-in-out;
     height: 60px;
     display: inline-block;
@@ -86,8 +83,7 @@ body {
     position: relative;
 }
 
-.about-btn img {
-
+.contact-btn img {
     opacity: .5;
     position: absolute;
     top: 53%;
@@ -96,18 +92,135 @@ body {
     margin-left: 10px;
     border: 0;
     width: 25px;
-
 }
 
-.about-btn:hover {
+.contact-btn:hover {
     text-decoration: none;
 }
 
-.about-btn:hover img {
+.contact-btn:hover img {
     opacity: 1;
     margin-left: 13px;
 }
 
 a {
     text-decoration: none;
+}
+
+/*/////////////////////////////// ABOUT ME PAGE (start) //////////////////////////////*/
+#about-name {
+    font-size: 11px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gray);
+}
+
+#about-title {
+    margin-bottom: 60px;
+}
+
+#about-title span,
+#about-subtitle span {
+    color: var(--gold);
+}
+
+#about-description {
+    background-color: black;
+}
+
+.img-add {
+    background-size: cover;
+    background-image: url(../images/me.png);
+    width: 100%;
+    min-height: 60vw;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#about-description p {
+    margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 30px;
+
+    color: white;
+    width: 100%;
+}
+
+
+.social-btn {
+    transition: all .25s ease-in-out;
+
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+}
+
+
+#map {
+    position: relative;
+    transform: translate(-50%, 0);
+    display: inline-block;
+    left: 50%;
+}
+
+.location-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--gold);
+    border-radius: 10px;
+    top: 59%;
+    left: 29%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.location-ring {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--gold);
+    border-radius: 25px;
+    top: calc(59% - 25px);
+    left: calc(29% - 25px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: pulsate 1.5s ease-out infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0.0;
+    }
+}
+
+#map img {
+    width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+    .about-info-block {
+        width: 50%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        background: #191A1E;
+    }
 }
