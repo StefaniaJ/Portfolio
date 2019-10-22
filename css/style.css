@@ -110,7 +110,7 @@ footer {
 }
 
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: #0e1316bd;
     color: white;
     transform: rotateY(180deg);
 }
@@ -129,16 +129,11 @@ footer {
 }
 
 .wrap {
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
+    max-width: 331px;
+    margin: 0 auto;
     padding: 1em;
     line-height: 4em;
-    background-color: aqua;
-}
-
-.wrap img {
-    /* width: 60%; */
-    width: 100%;
+    /* background-color: aqua; */
 }
 
 /*/////////////////////////////// CONTACT ME PAGE (start) //////////////////////////////*/
