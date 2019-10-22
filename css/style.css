@@ -67,9 +67,10 @@ main {
 footer {
     background: var(--black);
     color: var(--white);
-    padding: 100px 60px;
-    display: flex;
+    /* padding: 100px 60px; */
+    /* display: flex; */
     width: 100%;
+    height: 230px;
     text-align: center;
 }
 
@@ -295,6 +296,16 @@ a {
     width: 100%;
 }
 
+
+
+.bg {
+    background-color: blueviolet;
+    min-height: 100vh;
+}
+
+
+/*/////////////////////////////// MEDIA (start) //////////////////////////////*/
+
 @media screen and (min-width: 760px) {
     .about-info-block {
         width: 50%;
@@ -303,4 +314,28 @@ a {
         overflow: hidden;
         background: #191A1E;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5rem;
+
+        min-height: 100vh;
+        margin: 0;
+        padding: 1em;
+        line-height: 4em;
+    }
+
+    /* .bg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+    .img-cart {
+        float: left;
+    }
+
 }
