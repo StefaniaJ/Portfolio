@@ -2,6 +2,8 @@
 :root {
     --gold: #A58861;
     --gray: rgba(25, 26, 30, 0.4);
+    --black: #141517;
+    --white: #fff;
     --black-btn: #191A1E;
     --black-border-btn: rgba(25, 26, 30, 0.15);
 }
@@ -22,9 +24,12 @@ body {
 }
 
 footer {
-    background-color: black;
-    color: white;
-    height: 200px;
+    background: var(--black);
+    color: var(--white);
+    padding: 100px 60px;
+    display: flex;
+    width: 100%;
+    text-align: center;
 }
 
 /* PROJECT PAGE */
@@ -143,7 +148,6 @@ a {
     margin-bottom: 60px;
     font-size: 15px;
     line-height: 30px;
-
     color: white;
     width: 100%;
 }
@@ -151,7 +155,6 @@ a {
 
 .social-btn {
     transition: all .25s ease-in-out;
-
 }
 
 .social-btn img {
