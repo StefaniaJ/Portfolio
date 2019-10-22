@@ -57,6 +57,11 @@ nav {
     z-index: 999;
 }
 
+/* ////////////////// MAIN ///////////// */
+main {
+    margin-top: 75px;
+}
+
 /* ////////////////// FOOTER ///////////// */
 footer {
     background: var(--black);
@@ -194,11 +199,8 @@ a {
 
 .social-btn img {
     width: 30px;
-    height: 30px;
+    height: auto;
     margin-bottom: 10px;
-    opacity: 1;
-    visibility: visible;
-    background-color: white;
 }
 
 
