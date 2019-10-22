@@ -23,6 +23,41 @@ body {
     min-height: 100vh;
 }
 
+/* ////////////////// HEADER ///////////// */
+header {
+    overflow: hidden;
+    background: var(--white);
+    color: var(--black);
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+    z-index: 999;
+}
+
+#logo {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+nav {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+/* ////////////////// FOOTER ///////////// */
 footer {
     background: var(--black);
     color: var(--white);
