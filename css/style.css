@@ -35,6 +35,7 @@ header {
     border-bottom: 1px solid transparent;
     transition: .3s;
     z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #logo {
@@ -72,12 +73,54 @@ footer {
     text-align: center;
 }
 
-/* PROJECT PAGE */
+/*/////////////////////////////// PROJECT PAGE (start) //////////////////////////////*/
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
 
 .lazy-load__image {
     opacity: 0;
-    transition: 1s;
-    transform: translateY(5%);
+    transition: 2s;
+    /* transform: translateY(5%); */
+    transform: translateY(8%);
 }
 
 .lazy-load__image--active {
@@ -86,14 +129,16 @@ footer {
 }
 
 .wrap {
-    max-width: 600px;
-    margin: 0 auto;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
     padding: 1em;
     line-height: 4em;
+    background-color: aqua;
 }
 
 .wrap img {
-    width: 60%;
+    /* width: 60%; */
+    width: 100%;
 }
 
 /*/////////////////////////////// CONTACT ME PAGE (start) //////////////////////////////*/

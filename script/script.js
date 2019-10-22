@@ -6,28 +6,29 @@
 
 // Find all images
 let images = document.querySelectorAll(".lazy-load__image");
+let card = document.querySelectorAll(".flip-card");
 
 function checkScroll(e) {
-  images.forEach((image, i) => {
-    const top = Math.round(image.getBoundingClientRect().top);
-    const height = Math.round(image.getBoundingClientRect().height);
+  images.forEach((card, i) => {
+    const top = Math.round(card.getBoundingClientRect().top);
+    const height = Math.round(card.getBoundingClientRect().height);
     const windowHeight = window.innerHeight;
 
     // If image is scrolled into viewport
     if (top + height / 2 < windowHeight) {
       // If image has no src
-      if (image.src.length < 1) {
-        // Find url in data-img (<img data-src="image.png">) and set it as "src"
-        // (<img src="image.png">) when it is in viewport and should be loaded.
-        if (image.dataset.src) {
-          image.src = image.dataset.src;
-        }
-      }
+      //   if (card.src.length < 1) {
+      //     // Find url in data-img (<img data-src="image.png">) and set it as "src"
+      //     // (<img src="image.png">) when it is in viewport and should be loaded.
+      //     if (card.dataset.src) {
+      //       card.src = card.dataset.src;
+      //     }
+      //   }
 
       // Add active class to add animation
-      image.classList.add("lazy-load__image--active");
+      card.classList.add("lazy-load__image--active");
     } else {
-      image.classList.remove("lazy-load__image--active");
+      card.classList.remove("lazy-load__image--active");
     }
   });
 }
