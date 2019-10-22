@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Silka-Regular;
+    src: url("../fonts/Silka/silka-regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: Silka-Medium;
+    src: url("../fonts/Silka/silka-medium-webfont.ttf");
+}
+
+@font-face {
+    font-family: Silka-SemiBold;
+    src: url("../fonts/Silka/silka-semibold-webfont.ttf");
+}
+
+@font-face {
+    font-family: Silka-Bold;
+    src: url("../fonts/Silka/silka-bold-webfont.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Silka-SemiBold', sans-serif;
+}
+
+
+/* PROJECT PAGE */
+
+.lazy-load__image {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(5%);
+}
+
+.lazy-load__image--active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    line-height: 4em;
+}
+
+.wrap img {
+    width: 60%;
+}
+
+/* ABOUT ME PAGE */
+#about-title {
+    font-size: 11px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+#about-subtitle {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 25px;
+}
+
+#about-subtitle span {
+    color: #A58861;
+    display: inline-block;
+}
+
+.about-btn {
+    margin-bottom: 90px;
+    background: #fff;
+    border: 1px solid rgba(25, 26, 30, 0.15);
+    color: #191A1E;
+    transition: all .15s ease-in-out;
+    height: 60px;
+    display: inline-block;
+    padding: 30px 55px 30px 40px;
+    line-height: 0px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.about-btn img {
+
+    opacity: .5;
+    position: absolute;
+    top: 53%;
+    transform: translate(0, -50%);
+    display: inline-block;
+    margin-left: 10px;
+    border: 0;
+    width: 25px;
+
+}
+
+.about-btn:hover {
+    text-decoration: none;
+}
+
+.about-btn:hover img {
+    opacity: 1;
+    margin-left: 13px;
+}
+
+a {
+    text-decoration: none;
+}
