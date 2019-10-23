@@ -4,6 +4,7 @@
     --gray: rgba(25, 26, 30, 0.4);
     --black: #141517;
     --white: #fff;
+    --red: #780606;
     --black-btn: #191A1E;
     --black-border-btn: rgba(25, 26, 30, 0.15);
 }
@@ -102,16 +103,263 @@ footer {
 /*/////////////////////////////// FIRST PAGE (start) //////////////////////////////*/
 #portfolio-title-container {
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 230px;
 }
 
 #portfolio-title {
     font-size: 100px;
     text-align: center;
     letter-spacing: 5px;
-    ;
-
 }
+
+/*/////////// BARS + lateral navigation (start) /////////////*/
+
+.lines-container {
+    position: relative;
+    width: 140px;
+    display: none;
+    margin-top: 185px;
+    letter-spacing: 2px;
+}
+
+.lines {
+    display: inline-block;
+}
+
+.line {
+    border-left: 2px solid black;
+    position: absolute;
+}
+
+.line1 {
+    height: 700px;
+    left: 10px;
+    margin-left: -3px;
+    margin-top: 40px;
+}
+
+.line2 {
+    height: 600px;
+    left: 30px;
+    margin-left: -3px;
+    margin-top: 70px
+}
+
+.line3 {
+    height: 300px;
+    left: 50px;
+    margin-left: -3px;
+    margin-top: 141px
+}
+
+
+#text1 {
+    writing-mode: vertical-rl;
+    margin-left: -10px;
+    margin-top: -70px;
+    transform: rotate(180deg);
+}
+
+#text2 {
+    writing-mode: vertical-rl;
+    margin-left: -10px;
+    margin-top: -46px;
+    transform: rotate(180deg);
+}
+
+#text3 {
+    writing-mode: vertical-rl;
+    margin-left: -10px;
+    margin-top: -87px;
+    transform: rotate(180deg);
+}
+
+.location-dot-line {
+    width: 10px;
+    height: 10px;
+    background: yellow;
+    border-radius: 10px;
+    top: 100%;
+    left: 4%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+}
+
+.location-ring-line {
+    width: 30px;
+    height: 30px;
+    border: 2px solid yellow;
+    border-radius: 25px;
+    top: calc(100% - 18px);
+    left: calc(4% - 18px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: pulsate 1.5s ease-out infinite;
+    opacity: 0;
+    margin-top: 15px;
+}
+
+
+
+/*/////////////////////////////// ABOUT ME PAGE (start) //////////////////////////////*/
+#about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+#about-container img {
+    width: 300px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#about-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.subtitle-red {
+    color: var(--red);
+}
+
+#subtitle-about {
+    margin-right: 10px;
+}
+
+.subtitle-red span {
+    color: var(--black);
+}
+
+.subtitle-location {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+#map {
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+
+
+#map {
+    position: relative;
+    transform: translate(-50%, 0);
+    display: inline-block;
+    left: 50%;
+}
+
+#map img {
+    width: 100%;
+}
+
+.location-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--gold);
+    border-radius: 10px;
+    top: 59%;
+    left: 29%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.location-ring {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--gold);
+    border-radius: 25px;
+    top: calc(59% - 25px);
+    left: calc(29% - 25px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: pulsate 1.5s ease-out infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0.0;
+    }
+}
+
+/* ///////////////////////CHECK HERE /////////////////*/
+
+
+#about-name {
+    font-size: 11px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gray);
+}
+
+#about-title {
+    margin-bottom: 60px;
+}
+
+#about-title span,
+#about-subtitle span {
+    color: var(--gold);
+}
+
+#about-description {
+    background-color: black;
+}
+
+.img-add {
+    background-size: cover;
+    background-image: url(../images/me.png);
+    width: 100%;
+    min-height: 60vw;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#about-description p {
+    margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+    width: 100%;
+}
+
+
+.social-btn {
+    transition: all .25s ease-in-out;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.bg {
+    background-color: blueviolet;
+    min-height: 100vh;
+}
+
+
+
+
 
 /*/////////////////////////////// PROJECT PAGE (start) //////////////////////////////*/
 .flip-card {
@@ -232,205 +480,6 @@ a {
     text-decoration: none;
 }
 
-/*/////////////////////////////// ABOUT ME PAGE (start) //////////////////////////////*/
-#about-name {
-    font-size: 11px;
-    line-height: 30px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--gray);
-}
-
-#about-title {
-    margin-bottom: 60px;
-}
-
-#about-title span,
-#about-subtitle span {
-    color: var(--gold);
-}
-
-#about-description {
-    background-color: black;
-}
-
-.img-add {
-    background-size: cover;
-    background-image: url(../images/me.png);
-    width: 100%;
-    min-height: 60vw;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-}
-
-#about-description p {
-    margin-bottom: 60px;
-    font-size: 15px;
-    line-height: 30px;
-    color: white;
-    width: 100%;
-}
-
-
-.social-btn {
-    transition: all .25s ease-in-out;
-}
-
-.social-btn img {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-}
-
-
-#map {
-    position: relative;
-    transform: translate(-50%, 0);
-    display: inline-block;
-    left: 50%;
-}
-
-.location-dot {
-    width: 20px;
-    height: 20px;
-    background: var(--gold);
-    border-radius: 10px;
-    top: 59%;
-    left: 29%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.location-ring {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--gold);
-    border-radius: 25px;
-    top: calc(59% - 25px);
-    left: calc(29% - 25px);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    animation: pulsate 1.5s ease-out infinite;
-    opacity: 0;
-}
-
-@-webkit-keyframes pulsate {
-    0% {
-        -webkit-transform: scale(0.1, 0.1);
-        opacity: 0.0;
-    }
-
-    50% {
-        opacity: 1.0;
-    }
-
-    100% {
-        -webkit-transform: scale(1, 1);
-        opacity: 0.0;
-    }
-}
-
-#map img {
-    width: 100%;
-}
-
-
-
-.bg {
-    background-color: blueviolet;
-    min-height: 100vh;
-}
-
-
-/*/////////////////////////////// BARS (start) //////////////////////////////*/
-
-.lines-container {
-    position: relative;
-    width: 140px;
-    display: none;
-    margin-top: 185px;
-    letter-spacing: 2px;
-}
-
-.lines {
-    display: inline-block;
-}
-
-.line {
-    border-left: 2px solid black;
-    position: absolute;
-}
-
-.line1 {
-    height: 700px;
-    left: 10px;
-    margin-left: -3px;
-    margin-top: 40px;
-}
-
-.line2 {
-    height: 600px;
-    left: 30px;
-    margin-left: -3px;
-    margin-top: 70px
-}
-
-.line3 {
-    height: 500px;
-    left: 50px;
-    margin-left: -3px;
-    margin-top: 141px
-}
-
-
-#text1 {
-    writing-mode: vertical-rl;
-    margin-left: -10px;
-    margin-top: -70px;
-    transform: rotate(180deg);
-}
-
-#text2 {
-    writing-mode: vertical-rl;
-    margin-left: -10px;
-    margin-top: -46px;
-    transform: rotate(180deg);
-}
-
-#text3 {
-    writing-mode: vertical-rl;
-    margin-left: -10px;
-    margin-top: -87px;
-    transform: rotate(180deg);
-}
-
-.location-dot-line {
-    width: 10px;
-    height: 10px;
-    background: yellow;
-    border-radius: 10px;
-    top: 100%;
-    left: 4%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin-top: 15px;
-}
-
-.location-ring-line {
-    width: 30px;
-    height: 30px;
-    border: 2px solid yellow;
-    border-radius: 25px;
-    top: calc(100% - 18px);
-    left: calc(4% - 18px);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    animation: pulsate 1.5s ease-out infinite;
-    opacity: 0;
-    margin-top: 15px;
-}
-
 
 
 
@@ -458,8 +507,6 @@ a {
         padding: 1em;
         line-height: 4em;
     }
-
-
 
     .img-cart {
         float: left;
@@ -489,10 +536,11 @@ a {
     }
 
 
-    #content {
+    #about-container {
         /* grid-area: contentA; */
         grid-column: 2/3;
         grid-row: 2/3;
+        background-color: red;
     }
 
 }
