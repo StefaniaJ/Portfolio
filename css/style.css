@@ -401,6 +401,35 @@ footer {
 
 
 /*/////////////////////////////// PROJECT PAGE (start) //////////////////////////////*/
+#projects-container {
+    margin-top: 30px;
+}
+
+#projects-container h4 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0 auto;
+}
+
+#projects-container hr {
+    width: 75px;
+    border-top: 2px solid black;
+    margin: 0 auto;
+    margin-top: -3px;
+    margin-left: 335px;
+
+    margin-bottom: 50px;
+}
+
+#projects-container h3 {
+    text-align: center;
+
+    position: absolute;
+    left: 426px;
+    top: 1379px;
+}
+
+
 .flip-card {
     background-color: transparent;
     width: 300px;
