@@ -111,13 +111,11 @@ footer {
 }
 
 /*/////////// BARS + lateral navigation (start) /////////////*/
-
 .lines-container {
     position: relative;
     width: 140px;
     width: 60px;
     display: none;
-    /* margin-top: 185px; */
     margin-top: 255px;
     letter-spacing: 2px;
 }
@@ -156,7 +154,6 @@ footer {
     margin-left: 4px;
     margin-top: 141px
 }
-
 
 #text1 {
     writing-mode: vertical-rl;
@@ -270,10 +267,6 @@ footer {
     font-weight: 300;
 }
 
-
-
-
-
 #map {
     position: relative;
     transform: translate(-50%, 0);
@@ -359,7 +352,6 @@ footer {
     letter-spacing: 5px;
     font-weight: 900;
 }
-
 
 .flip-card {
     background-color: transparent;
@@ -657,240 +649,244 @@ a {
 
 }
 
-
-@media screen and (min-width: 760px) {
-    .about-info-block {
-        width: 50%;
-        float: left;
-        position: relative;
-        overflow: hidden;
-        background: #191A1E;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    h3 {
-        font-size: 26px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-
-    #logo {
-        left: 45px;
-        font-size: 20px;
-    }
-
-    nav {
-        right: 45px;
-    }
-
-    #portfolio-title-container {
-        margin-top: 150px;
-    }
-
-    #portfolio-title {
-        font-size: 100px;
-    }
-
-    #lateral-text-content h4 {
-        margin-top: 209px;
-    }
-
-    #about-info {
-        margin-top: 120px;
-        text-align: unset;
-    }
-
-    .subtitle-ambition {
-        position: absolute;
-        right: 192px;
-        margin-bottom: 0px;
-    }
-
-    #subtitle-about {
-        margin-top: 30px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-
-    #about-info p {
-        width: 255px;
-        margin-top: 7px;
-        margin-bottom: 0px;
-        text-align: unset;
-        margin-left: 0px;
-    }
-
-    .subtitle-location {
-        grid-column: 1/2;
-        grid-row: 2/2;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        align-self: start;
-        justify-self: end;
-        text-align: unset;
-    }
-
-    #map {
-        grid-column: 2/3;
-        grid-row: 2/2;
-    }
-
-
-    .wrap {
-        margin-top: 0px;
-    }
-
-    .img-cart {
-        float: left;
-    }
-
-    #first-main {
-        display: grid;
-        grid-template-columns: 60px 80px 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    #portfolio-title-container {
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-
-    .lines-container {
-        grid-column: 1/2;
-        grid-row: 1/3;
-        display: block;
-    }
-
-    #lateral-text-content {
-        grid-column: 1/3;
-        grid-row: 2/4;
-    }
-
-    /* //////////ADDED HERE start////////////// */
-    #about-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #me-photo {
-        width: 300px;
-        display: block;
-        margin: 0;
-    }
-
-    #about-container img {
-        grid-column: 1/2;
-        grid-row: 1/2;
-
-    }
-
-    #about-info {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    /* //////////ADDED HERE end////////////// */
-
-    #about-container {
-        grid-column: 3/4;
-        grid-row: 2/3;
-        background-color: red;
-    }
-
-    #projects-container {
-        grid-column: 2/4;
-        grid-row: 3/4;
-        background-color: greenyellow;
-        margin-top: 30px;
-    }
-
-    #projects-container hr {
-        border-top: 2.34px solid black;
-        margin-top: -3px;
-        margin-left: 335px;
-    }
-
+@media only screen and (min-width: 600px) {
     #projects-container h3 {
-        position: absolute;
-        left: 426px;
-        top: 1379px;
-        margin-left: 0px;
-        padding-bottom: 0px;
-        margin-top: 0px;
+        margin-left: -82px;
     }
 
-    #contact-container {
-        grid-column: 3/4;
-        grid-row: 4/5;
-        background-color: pink;
+    @media screen and (min-width: 760px) {
+        .about-info-block {
+            width: 50%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            background: #191A1E;
+        }
     }
 
+    @media screen and (min-width: 768px) {
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        #logo {
+            left: 45px;
+            font-size: 20px;
+        }
+
+        nav {
+            right: 45px;
+        }
+
+        #portfolio-title-container {
+            margin-top: 150px;
+        }
+
+        #portfolio-title {
+            font-size: 100px;
+        }
+
+        #lateral-text-content h4 {
+            margin-top: 209px;
+        }
+
+        #about-info {
+            margin-top: 120px;
+            text-align: unset;
+        }
+
+        .subtitle-ambition {
+            position: absolute;
+            right: 192px;
+            margin-bottom: 0px;
+        }
+
+        #subtitle-about {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        #about-info p {
+            width: 255px;
+            margin-top: 7px;
+            margin-bottom: 0px;
+            text-align: unset;
+            margin-left: 0px;
+        }
+
+        .subtitle-location {
+            grid-column: 1/2;
+            grid-row: 2/2;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            align-self: start;
+            justify-self: end;
+            text-align: unset;
+        }
+
+        #map {
+            grid-column: 2/3;
+            grid-row: 2/2;
+        }
+
+
+        .wrap {
+            margin-top: 0px;
+        }
+
+        .img-cart {
+            float: left;
+        }
+
+        #first-main {
+            display: grid;
+            grid-template-columns: 60px 80px 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        #portfolio-title-container {
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+
+        .lines-container {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            display: block;
+        }
+
+        #lateral-text-content {
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+
+        /* //////////ADDED HERE start////////////// */
+        #about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #me-photo {
+            width: 300px;
+            display: block;
+            margin: 0;
+        }
+
+        #about-container img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+        }
+
+        #about-info {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        /* //////////ADDED HERE end////////////// */
+
+        #about-container {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background-color: red;
+        }
+
+        #projects-container {
+            grid-column: 2/4;
+            grid-row: 3/4;
+            background-color: greenyellow;
+            margin-top: 30px;
+        }
+
+        #projects-container hr {
+            border-top: 2.34px solid black;
+            margin-top: -3px;
+            margin-left: 335px;
+        }
+
+        #projects-container h3 {
+            position: absolute;
+            left: 426px;
+            top: 1379px;
+            margin-left: 0px;
+            padding-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        #contact-container {
+            grid-column: 3/4;
+            grid-row: 4/5;
+            background-color: pink;
+        }
 
 
 
-    /*/////////// BARS + lateral navigation (start) /////////////*/
 
-    .lines-container {
-        position: relative;
-        width: 140px;
-        width: 60px;
-        display: none;
-        margin-top: 185px;
-        letter-spacing: 2px;
+        /*/////////// BARS + lateral navigation (start) /////////////*/
+
+        .lines-container {
+            position: relative;
+            width: 140px;
+            width: 60px;
+            display: none;
+            margin-top: 185px;
+            letter-spacing: 2px;
+        }
+
+        .lines {
+            display: inline-block;
+        }
+
+        .line {
+            border-left: 2px solid black;
+            position: absolute;
+        }
+
+        .line1 {
+            height: 2300px;
+            left: 10px;
+            margin-left: -3px;
+            margin-top: 40px;
+        }
+
+        .line2 {
+            height: 1000px;
+            left: 30px;
+            margin-left: -3px;
+            margin-top: 70px
+        }
+
+        .line3 {
+            height: 300px;
+            left: 50px;
+            margin-left: -3px;
+            margin-top: 141px
+        }
+
+        #text1 {
+            writing-mode: vertical-rl;
+            margin-left: -10px;
+            margin-top: -70px;
+            transform: rotate(180deg);
+        }
+
+        #text2 {
+            writing-mode: vertical-rl;
+            margin-left: -10px;
+            margin-top: -46px;
+            transform: rotate(180deg);
+        }
+
+        #text3 {
+            writing-mode: vertical-rl;
+            margin-left: -10px;
+            margin-top: -87px;
+            transform: rotate(180deg);
+        }
+
     }
-
-    .lines {
-        display: inline-block;
-    }
-
-    .line {
-        border-left: 2px solid black;
-        position: absolute;
-    }
-
-    .line1 {
-        height: 2300px;
-        left: 10px;
-        margin-left: -3px;
-        margin-top: 40px;
-    }
-
-    .line2 {
-        height: 1000px;
-        left: 30px;
-        margin-left: -3px;
-        margin-top: 70px
-    }
-
-    .line3 {
-        height: 300px;
-        left: 50px;
-        margin-left: -3px;
-        margin-top: 141px
-    }
-
-    #text1 {
-        writing-mode: vertical-rl;
-        margin-left: -10px;
-        margin-top: -70px;
-        transform: rotate(180deg);
-    }
-
-    #text2 {
-        writing-mode: vertical-rl;
-        margin-left: -10px;
-        margin-top: -46px;
-        transform: rotate(180deg);
-    }
-
-    #text3 {
-        writing-mode: vertical-rl;
-        margin-left: -10px;
-        margin-top: -87px;
-        transform: rotate(180deg);
-    }
-
-}
