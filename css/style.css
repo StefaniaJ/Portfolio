@@ -87,8 +87,8 @@ nav {
 /* ////////////////// MAIN ///////////// */
 main {
     margin-top: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* ////////////////// FOOTER ///////////// */
@@ -186,7 +186,8 @@ footer {
 .location-dot-line {
     width: 10px;
     height: 10px;
-    background: yellow;
+    background: var(--gold);
+    ;
     border-radius: 10px;
     top: 100%;
     left: 4%;
@@ -198,7 +199,8 @@ footer {
 .location-ring-line {
     width: 30px;
     height: 30px;
-    border: 2px solid yellow;
+    border: 2px solid var(--gold);
+    ;
     border-radius: 25px;
     top: calc(100% - 18px);
     left: calc(4% - 18px);
@@ -243,6 +245,7 @@ footer {
 #about-info {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 120px;
 }
 
 .subtitle-red {
@@ -250,7 +253,12 @@ footer {
 }
 
 #subtitle-about {
-    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.subtitle-ambition {
+    position: absolute;
+    right: 192px;
 }
 
 .subtitle-red span {
@@ -260,6 +268,15 @@ footer {
 .subtitle-location {
     grid-column: 1/2;
     grid-row: 2/2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: start;
+    justify-self: end;
+}
+
+#about-info p {
+    width: 255px;
+    margin-top: 7px;
 }
 
 #map {
