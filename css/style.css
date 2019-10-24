@@ -328,69 +328,6 @@ footer {
     }
 }
 
-/* ///////////////////////CHECK HERE /////////////////*/
-
-
-#about-name {
-    font-size: 11px;
-    line-height: 30px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--gray);
-}
-
-#about-title {
-    margin-bottom: 60px;
-}
-
-#about-title span,
-#about-subtitle span {
-    color: var(--gold);
-}
-
-#about-description {
-    background-color: black;
-}
-
-.img-add {
-    background-size: cover;
-    background-image: url(../images/me.png);
-    width: 100%;
-    min-height: 60vw;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-}
-
-#about-description p {
-    margin-bottom: 60px;
-    font-size: 15px;
-    line-height: 30px;
-    color: white;
-    width: 100%;
-}
-
-
-.social-btn {
-    transition: all .25s ease-in-out;
-}
-
-.social-btn img {
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-}
-
-
-
-.bg {
-    background-color: blueviolet;
-    min-height: 100vh;
-}
-
-
-
-
 
 /*/////////////////////////////// PROJECT PAGE (start) //////////////////////////////*/
 #projects-container {
@@ -568,8 +505,6 @@ a {
 }
 
 
-
-
 /*/////////////////////////////// MEDIA (start) //////////////////////////////*/
 
 @media only screen and (min-width: 450px) {
@@ -608,23 +543,6 @@ a {
 }
 
 @media only screen and (min-width: 550px) {
-    #portfolio-title {
-        font-size: 60px;
-    }
-
-    #portfolio-title-container {
-        margin-bottom: -18px;
-    }
-
-    #projects-container h3 {
-        margin-left: -55px;
-    }
-
-    .lines-container {
-        display: block;
-    }
-
-
     #first-main {
         display: grid;
         grid-template-columns: 60px 60px 1fr;
@@ -636,6 +554,14 @@ a {
         grid-row: 1/2;
         margin-bottom: 205px;
         margin-top: 215px;
+    }
+
+    #portfolio-title {
+        font-size: 60px;
+    }
+
+    #projects-container h3 {
+        margin-left: -55px;
     }
 
     .lines-container {
@@ -650,40 +576,20 @@ a {
         padding-right: 32px;
     }
 
+    /* ABOUT CONTAINER (start) -media 550 */
     #about-container {
         grid-column: 3/4;
         grid-row: 2/3;
         background-color: red;
-    }
-
-    #projects-container {
-        grid-column: 2/4;
-        grid-row: 3/4;
-        background-color: greenyellow;
-
-    }
-
-    #contact-container {
-        grid-column: 2/4;
-        grid-row: 4/5;
-        background-color: pink;
-        margin: 0;
-        margin-top: 50px;
-    }
-
-
-    #about-container {
         display: grid;
         grid-template-columns: 190px 1fr;
     }
-
 
     #me-photo {
         grid-column: 1/2;
         grid-row: 1/2;
         width: 240px;
         display: block;
-        /* margin: 0 auto; */
         margin: 0;
         margin-top: 0px;
     }
@@ -700,7 +606,6 @@ a {
     #subtitle-about {
         margin-left: 10px;
     }
-
 
     #about-info p {
         margin-bottom: 55px;
@@ -725,6 +630,25 @@ a {
     h3 {
         font-size: 40px;
     }
+
+    /* PROJECTS CONTAINER (start) -media 550 */
+    #projects-container {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        background-color: greenyellow;
+    }
+
+    /* CONTACT CONTAINER (start) -media 550 */
+    #contact-container {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        background-color: pink;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+
+
 }
 
 
