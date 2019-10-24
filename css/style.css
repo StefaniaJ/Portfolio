@@ -137,7 +137,7 @@ footer {
 }
 
 .line1 {
-    height: 2300px;
+    height: 3010px;
     left: 10px;
     margin-left: -3px;
     margin-top: 40px;
@@ -583,6 +583,7 @@ a {
         background-color: red;
         display: grid;
         grid-template-columns: 190px 1fr;
+        margin-bottom: 30px;
     }
 
     #me-photo {
@@ -636,6 +637,11 @@ a {
         grid-column: 2/4;
         grid-row: 3/4;
         background-color: greenyellow;
+    }
+
+    #projects-container h3 {
+        margin-left: -37px;
+        margin-top: -101px;
     }
 
     /* CONTACT CONTAINER (start) -media 550 */
