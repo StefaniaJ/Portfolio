@@ -432,8 +432,8 @@ footer {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     perspective: 1000px;
     margin-bottom: 20px;
 }
