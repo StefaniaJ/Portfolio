@@ -531,6 +531,7 @@ footer {
     position: absolute;
     bottom: 0;
     transform: translate(-80px, -50px);
+
 }
 
 .flip-card-back {
@@ -869,7 +870,7 @@ a {
     /*///////// BARS+ LATERAL TEXT /////////*/
     .line1 {
         margin-top: 63px;
-        height: 2133px;
+        height: 2448px;
     }
 
     .line2 {
@@ -931,13 +932,40 @@ a {
 
 
 @media screen and (min-width: 900px) {
+    .line1 {
+        height: 2538px;
+    }
+
+    .line2 {
+        height: 1094px;
+    }
+
     #about-info p {
         width: 335px;
     }
 }
 
+
+@media screen and (min-width: 956px) {
+    .line1 {
+        height: 2271px;
+    }
+}
+
+
+
+
+
 @media screen and (min-width: 1280px) {
     #logo {
         color: red;
+    }
+
+    .line1 {
+        height: 2000px;
+    }
+
+    .line2 {
+        height: 1210px;
     }
 }
