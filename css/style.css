@@ -513,6 +513,7 @@ footer {
 
 .flip-card-front h1 {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .flip-card-front p {
@@ -760,6 +761,19 @@ a {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
+    /* .location-dot {
+        width: 9px;
+        height: 9px;
+        top: 25%;
+        left: 19%;
+    }
+
+    .location-ring {
+        top: calc(43% - 25px);
+        left: calc(19% - 25px);
+    } */
+
 
     h3 {
         font-size: 40px;
