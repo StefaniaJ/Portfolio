@@ -7,112 +7,232 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!----- LOGO ------->
+    <header id="header">
+        <h3 id="logo"><a href="index.html">STEFANIA</a></h3>
 
-    <header>
-        <h3 id="logo">LOGO HERE</h3>
-        <nav>
-            <p>NAV</p>
+        <!----- NAVIGATION ------->
+        <span style="font-size:30px;cursor:pointer; float:right;" onclick="openNav()">&#9776;</span>
+        <nav id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about-container" onclick="closeNav()">About</a>
+            <a href="#projects-container" onclick="closeNav()">Works</a>
+            <a href="#contact-container" onclick="closeNav()">Contact</a>
         </nav>
+
+
     </header>
-    <main>
-        <div class="wrap">
-
-            <div class="flip-card lazy-load__image">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src='images/proj-1.png' alt='' style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Project Title</h1>
-                        <p>Short description</p>
-                        <a href="#"> <button> See project</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-card lazy-load__image">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src='images/proj-2.png' alt='' style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Project Title</h1>
-                        <p>Short description</p>
-                        <a href="#"> <button> See project</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="flip-card lazy-load__image">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src='images/proj-3.png' alt='' style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Project Title</h1>
-                        <p>Short description</p>
-                        <a href="#"> <button> See project</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card lazy-load__image">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src='images/proj-4.png' alt='' style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Project Title</h1>
-                        <p>Short description</p>
-                        <a href="#"> <button> See project</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card lazy-load__image">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src='images/proj-5.png' alt='' style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back ">
-                        <h1>Project Title</h1>
-                        <p>Short description</p>
-                        <a href="#"> <button> See project</button></a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class=" lazy-load__image bg">
-                <div class="img-cart">
-                    <img src='images/proj-5.png' alt='' style="width:300px;height:300px;">
-                </div>
-                <div class="text-card">
-                    <h1>Project Title</h1>
-                    <p>Short description</p>
-                    <a href="#"> <button> See project</button></a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        </div>
-
-        <section>
-            <p>some text</p>
+    <main id="first-main">
+        <!-- -----PORTFOLIO SECTION-FIRST PAGE (start)----- -->
+        <section id="portfolio-title-container">
+            <h1 id="portfolio-title">PORTFOLIO</h1>
         </section>
+
+        <!-- -----ABOUT SECTION-SEC. PAGE (start)----- -->
+
+        <!-- ---lines + vertical nav---- -->
+        <section class="lines-container">
+            <div class="lines">
+                <div class="line line1">
+                    <p id="text1"> <a href="#contact-container">contact</a> </p>
+                    <div class="location-dot-line"></div>
+                    <div class="location-ring-line"></div>
+                </div>
+            </div>
+
+            <div class="lines">
+                <div class="line line2">
+                    <p id="text2"><a href="#projects-container">work</a> </p>
+                    <div class="location-dot-line"></div>
+                    <div class="location-ring-line"></div>
+                </div>
+            </div>
+
+            <div class="lines">
+                <div class="line line3">
+                    <p id="text3"><a href="#about-container">about me </a> </p>
+                </div>
+            </div>
+        </section>
+        <!-- ---lateral text---- -->
+        <div id="lateral-text-content">
+            <h3> FRONTEND DEVELOPER</h3>
+            <h4 class="subtitle-red lateral-text-about"> STEFANIA OLTEANU</h4>
+        </div>
+        <!-- ---about page-container ---- -->
+        <!-- ---row 1 ---- -->
+        <section id="about-container">
+            <img id="me-photo" src="images/edta.png" alt="me" />
+
+            <div id="about-info">
+                <h4 class="subtitle-red subtitle-ambition"> AMBITION</h4>
+                <h4 id="subtitle-about">& ATTENTION</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has</p>
+            </div>
+            <!-- ---row 2 ---- -->
+            <h3 class="subtitle-red subtitle-location"> Where <br><span>am I?</span></h3>
+            <div id="map">
+                <div class="location-dot"></div>
+                <div class="location-ring"></div>
+                <img src="images/map.jpg" alt="map">
+            </div>
+        </section>
+
+
+        <!-- -----PROJECTS SECTION-3rd. PAGE (start)----- -->
+        <section id="projects-container">
+            <div id="projects-title">
+                <h4>MY</h4>
+                <h3 class="subtitle-red">WORKS</h3>
+                <hr>
+            </div>
+
+            <div class="wrap">
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <h1><b><em>Unlucky</em></b> Luke</h1>
+                            <p>A group project, where we created an interactive animation.
+                                There was special focus on a good User Experience for ​young adults interested in art.
+                            </p>
+                            <a href="http://stefania-olteanu.dk/sem1/western/index.html" target="_blank"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-6.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Petrograd Restaurant</h1>
+                            <p>I created a dynamic website for the imaginary restaurant ​Petrograd . </p>
+                            <a href="http://stefania-olteanu.dk/sem2/Dynamic-Restaurant/index.html"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-7.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Sprite sheet</h1>
+                            <p>I created a sprite sheet in illustrator and I animated it. </p>
+                            <a href="http://stefania-olteanu.dk/sem1/03.02.01walk/index.html"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-8.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Movies website</h1>
+                            <p>A group project where we transformed our common interest into an appealing and
+                                interesting website! </p>
+                            <a href="http://stefania-olteanu.dk/sem2/movies_website/index.html"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-9.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <h1>Hogwarts students</h1>
+                            <p>I created a student list which gave me a deeper understanding of JavaScript programming
+                                for visual interface</p>
+                            <a href="http://stefania-olteanu.dk/sem3/studentsListH/index.html"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-10.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flip-card lazy-load__image">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <h1>IFORM</h1>
+                            <p> A group project ,where we had to re-implement iFORM’s existing flow.Our focus was UI,
+                                UX and the development of the site.
+                            </p>
+                            <a href="http://stefania-olteanu.dk/sem3/iform/index.html"> <button> See
+                                    project</button></a>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-11.png' alt='' style="width:280px;height:280px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact-container">
+            <h4>Do you like my work?</h4>
+            <h3 class="subtitle-red">Find <span>me</span> </h3>
+            <div id="adress">
+                <p>
+                    Denmark, Copenhagen<br>
+                    +4550336831<br>
+                    Stefania.olteanu9704@gmail.com
+                </p>
+                <div id="social-contact">
+                    <img src="images/facebook-logo (2).png" alt="facebook-icon">
+                    <img src="images/instagram.png" alt="facebook-icon">
+                    <img src="images/linkedIn-white2.png" alt="facebook-icon">
+                </div>
+            </div>
+            <a href="#" class="contact-btn contact-btn-animateLink">Get in touch <img src="images/arrow-right.png"
+                    alt="arrow-right"></a>
+        </section>
+
+
+        <!-- Go to top (button) -->
+        <button onclick="btnTopFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up fa-lg"
+                aria-hidden="true"></i></button>
     </main>
     <footer>
-        <p> © Janina Stefania Olteanu </p>
-        <a href="about.html">CLICK</a>
+        <section id="footer-media">
+            <h1>Social media</h1>
+            <img src="images/facebook-logo (2).png" alt="facebook-icon">
+            <img src="images/instagram.png" alt="facebook-icon">
+            <img src="images/linkedIn-white2.png" alt="facebook-icon">
+        </section>
+
+        <section id="footer-contact">
+            <h1>Contact info</h1>
+            <p>
+                Denmark, Copenhagen<br>
+                +4550336831<br>
+                Stefania.olteanu9704@gmail.com
+            </p>
+            <p> © Janina Stefania Olteanu </p>
+        </section>
     </footer>
 
     <script src="script/script.js"></script>
