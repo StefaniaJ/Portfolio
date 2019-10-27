@@ -1,8 +1,8 @@
 // Source: https://codepen.io/karisabinemalmin/pen/yZojOy
 // Lazy load: Fade in and load images when scroll into viewport
 
-// Images that needs to be formatted like this:
-// <img class="lazy-load__image" data-src="image.png">
+// Elements that needs to be formatted like this:
+// <element class="lazy-load__image" >
 
 // Find all images
 let images = document.querySelectorAll(".lazy-load__image");
