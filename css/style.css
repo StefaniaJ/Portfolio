@@ -70,15 +70,15 @@ header {
     font-size: 15px;
 }
 
-/* nav {
-    float: right;
+header span {
+
     display: inline-block;
     position: absolute;
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 999;
-} */
+    z-index: 1;
+}
 
 
 
@@ -114,6 +114,7 @@ header {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -125,7 +126,6 @@ header {
         font-size: 18px;
     }
 }
-
 
 
 /* ////////////////// MAIN ///////////// */
