@@ -8,15 +8,32 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header id="header">
-        <h3 id="logo">LOGO HERE</h3>
-        <nav>
+        <h3 id="logo">STEFANIA</h3>
+        <!-- <nav>
             <p>NAV</p>
+
+        </nav> -->
+
+        <span style="font-size:30px;cursor:pointer; float:right;" onclick="openNav()">&#9776;</span>
+        <nav id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Works</a>
+            <a href="#">Contact</a>
         </nav>
+
+
+
+
+
+
+
     </header>
     <main id="first-main">
         <!-- -----PORTFOLIO SECTION-FIRST PAGE (start)----- -->
@@ -80,12 +97,6 @@
 
         <!-- -----PROJECTS SECTION-3rd. PAGE (start)----- -->
         <section id="projects-container">
-            <!-- <div id="projects-title">
-                <h4>MW </h4>
-                <hr>
-                <h3 class="subtitle-red">WORKS</h3>
-            </div> -->
-
             <div id="projects-title">
                 <h4>MY</h4>
                 <h3 class="subtitle-red">WORKS</h3>
@@ -96,70 +107,70 @@
 
                 <div class="flip-card lazy-load__image">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                        <div class="flip-card-front ">
+                            <h1><b>Project</b> <em>Title</em></h1>
+                            <p>Short description</p>
+                            <a href="#"> <button> See project</button></a>
+                        </div>
+                        <div class="flip-card-back">
                             <img src='images/proj-1.png' alt='' style="width:280px;height:280px;">
                         </div>
-                        <div class="flip-card-back ">
-                            <h1>Project Title</h1>
-                            <p>Short description</p>
-                            <a href="#"> <button> See project</button></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="flip-card lazy-load__image">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <h1>Project Title</h1>
+                            <p>Short description</p>
+                            <a href="#"> <button> See project</button></a>
+                        </div>
+                        <div class="flip-card-back">
                             <img src='images/proj-2.png' alt='' style="width:280px;height:280px;">
                         </div>
-                        <div class="flip-card-back ">
-                            <h1>Project Title</h1>
-                            <p>Short description</p>
-                            <a href="#"> <button> See project</button></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="flip-card lazy-load__image">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <h1>Project Title</h1>
+                            <p>Short description</p>
+                            <a href="#"> <button> See project</button></a>
+                        </div>
+                        <div class="flip-card-back">
                             <img src='images/proj-3.png' alt='' style="width:280px;height:280px;">
                         </div>
-                        <div class="flip-card-back ">
-                            <h1>Project Title</h1>
-                            <p>Short description</p>
-                            <a href="#"> <button> See project</button></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="flip-card lazy-load__image">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <h1>Project Title</h1>
+                            <p>Short description</p>
+                            <a href="#"> <button> See project</button></a>
+                        </div>
+                        <div class="flip-card-back">
                             <img src='images/proj-4.png' alt='' style="width:280px;height:280px;">
                         </div>
-                        <div class="flip-card-back ">
-                            <h1>Project Title</h1>
-                            <p>Short description</p>
-                            <a href="#"> <button> See project</button></a>
-                        </div>
                     </div>
                 </div>
 
                 <div class="flip-card lazy-load__image">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src='images/proj-5.png' alt='' style="width:280px;height:280px;">
-                        </div>
-                        <div class="flip-card-back ">
+                        <div class="flip-card-front ">
                             <h1>Project Title</h1>
                             <p>Short description</p>
                             <a href="#"> <button> See project</button></a>
                         </div>
+                        <div class="flip-card-back">
+                            <img src='images/proj-5.png' alt='' style="width:280px;height:280px;">
+                        </div>
                     </div>
                 </div>
 
-                <div class=" lazy-load__image bg">
+                <!-- <div class=" lazy-load__image bg">
                     <div class="img-cart">
                         <img src='images/proj-5.png' alt='' style="width:280px;height:280px;">
                     </div>
@@ -168,7 +179,7 @@
                         <p>Short description</p>
                         <a href="#"> <button> See project</button></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 

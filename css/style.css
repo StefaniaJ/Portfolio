@@ -70,7 +70,7 @@ header {
     font-size: 15px;
 }
 
-nav {
+/* nav {
     float: right;
     display: inline-block;
     position: absolute;
@@ -78,7 +78,55 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
+} */
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
 
 /* ////////////////// MAIN ///////////// */
 main {
@@ -412,8 +460,30 @@ footer {
 }
 
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.flip-card-front h1 {
+    margin-bottom: 10px;
+}
+
+.flip-card-front p {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flip-card-front button {
+    background: #fff;
+    border: 1px solid var(--black-border-btn);
+    color: var(--black-btn);
+    padding: 20px 45px 20px 40px;
+    line-height: 0px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-80px, -50px);
 }
 
 .flip-card-back {
@@ -522,17 +592,6 @@ a {
 
 
 /*/////////////////////////////// MEDIA (start) //////////////////////////////*/
-
-/* @media only screen and (min-width: 450px) {
-    #projects-container hr {
-        margin-top: -5.736px;
-    }
-
-    #projects-container h3 {
-        margin-left: 50px;
-    }
-} */
-
 @media only screen and (min-width: 500px) {
     /* #projects-container h3 {
         margin-left: -2px;
@@ -575,10 +634,6 @@ a {
     #portfolio-title {
         font-size: 60px;
     }
-
-    /* #projects-container h3 {
-        margin-left: -55px;
-    } */
 
     .lines-container {
         grid-column: 1/2;
@@ -668,13 +723,6 @@ a {
         margin-left: 25px;
     }
 
-
-    /*
-    #projects-container h3 {
-        margin-left: -37px;
-        margin-top: -101px;
-    } */
-
     /* CONTACT CONTAINER (start) -media 550 */
     #contact-container {
         grid-column: 2/4;
@@ -683,17 +731,9 @@ a {
         margin: 0;
         margin-top: 50px;
     }
-
-
-
 }
 
 @media only screen and (min-width: 600px) {
-    /* 
-    #projects-container h3 {
-        margin-left: -82px;
-    } */
-
     .line2 {
         height: 890px;
     }
@@ -704,10 +744,6 @@ a {
 }
 
 @media only screen and (min-width: 650px) {
-    /* #projects-container h3 {
-        margin-left: -131px;
-    } */
-
     .line2 {
         height: 925px;
     }
@@ -719,10 +755,6 @@ a {
 
 
 @media only screen and (min-width: 700px) {
-    /* #projects-container h3 {
-        margin-left: -186px;
-    } */
-
     .line2 {
         height: 975px;
     }
@@ -836,10 +868,6 @@ a {
         text-align: unset;
     }
 
-
-
-
-
     .subtitle-ambition {
         position: absolute;
         right: 192px;
@@ -885,27 +913,14 @@ a {
     }
 
     /* /////////PROJECT page -media 768////////// */
-    /* #projects-container {
+    #projects-container {
         grid-column: 2/4;
         grid-row: 3/4;
         background-color: greenyellow;
         margin-top: 30px;
     }
 
-    #projects-container hr {
-        border-top: 2.34px solid black;
-        margin-top: -3px;
-        margin-left: 335px;
-    }
-
-    #projects-container h3 {
-        position: absolute;
-        left: 426px;
-        top: 1379px;
-        margin-left: 0px;
-        padding-bottom: 0px;
-        margin-top: 0px;
-    } */
+    /*
 
     /* /////////CONTACT page -media 768////////// */
     #contact-container {
@@ -913,4 +928,10 @@ a {
         grid-row: 4/5;
     }
 
+}
+
+@media screen and (min-width: 1280px) {
+    #logo {
+        color: red;
+    }
 }
